@@ -1,0 +1,26 @@
+import length;
+import [weight | kg:1 | g:0.001 | pound:0.453];
+import [area | m2:1 | a:100 | ha:10000 | km2:1000000];
+import [time | s:1 | h:3600 | week:604800 | year:31536000];
+
+function example(size) {
+	counter = 0;
+	value = size;
+
+	if (!size) {
+		return 1mile;
+	}
+	else {
+		jump = 10mm.cm;
+		loop(counter != 10) {
+			value = (value + jump).m;
+			counter = counter + 1;
+		}
+	}
+
+	return (value*value / 100m).km;
+}
+
+function main() {
+    print(example(1mile));
+}
